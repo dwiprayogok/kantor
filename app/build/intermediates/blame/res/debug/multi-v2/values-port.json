@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\APPS DARI PC BARU\\MOBILE_SURVEY Part2\\kantor\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\dwi.prayogo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.0.1.aar\\e9b67066b299447bc7947b1eda66cf86\\res\\values-port\\values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\APPS DARI PC BARU\\MOBILE_SURVEY\\kantor\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\dwi.prayogo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.0.1.aar\\e9b67066b299447bc7947b1eda66cf86\\res\\values-port\\values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}

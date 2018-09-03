@@ -1,0 +1,52 @@
+Applications Memory Usage (kB):
+Uptime: 880096 Realtime: 880096
+
+** MEMINFO in pid 17979 [index.finance.faith] **
+                   Pss  Private  Private  Swapped     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap     4332     4256        0      236     8436     8366       69
+  Dalvik Heap     4326     4296        0     5744    18902    13289     5613
+ Dalvik Other      821      820        0        4                           
+        Stack      264      264        0        0                           
+       Ashmem        2        0        0        0                           
+      Gfx dev     2194     1464      728        0                           
+    Other dev        4        0        4        0                           
+     .so mmap     2132      144     1244     4900                           
+    .apk mmap      402        0      256        0                           
+    .ttf mmap       14        0        8        0                           
+    .dex mmap     7407     7248      148        4                           
+    .oat mmap     3323        0     1668        4                           
+    .art mmap     1249      968       40      164                           
+   Other mmap       88        8       60        0                           
+      Unknown      187      184        0        0                           
+        TOTAL    26745    19652     4156    11056    27338    21655     5682
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:     5304
+         Native Heap:     4256
+                Code:    10716
+               Stack:      264
+            Graphics:     2192
+       Private Other:     1076
+              System:     2937
+ 
+               TOTAL:    26745      TOTAL SWAP (KB):    11056
+ 
+ Objects
+               Views:       23         ViewRootImpl:        1
+         AppContexts:        2           Activities:        1
+              Assets:        5        AssetManagers:        2
+       Local Binders:       14        Proxy Binders:       18
+       Parcel memory:        4         Parcel count:       17
+    Death Recipients:        2      OpenSSL Sockets:        0
+ 
+ SQL
+         MEMORY_USED:      106
+  PAGECACHE_OVERFLOW:       12          MALLOC_SIZE:       62
+ 
+ DATABASES
+      pgsz     dbsz   Lookaside(b)          cache  Dbname
+         4      524             12         0/15/1  /data/user/0/index.finance.faith/databases/myDb

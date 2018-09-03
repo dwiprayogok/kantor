@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="2dp"
+    android:background="@color/md_white_1000"
+    android:paddingRight="2dp"
+    android:paddingLeft="2dp"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        //HEADER
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/judul_list"
+
+            android:background="@color/md_white_1000"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:textSize="12sp"
+                android:textColor="@color/md_black_1000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama\nCustomer"/>
+
+
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:textSize="12sp"
+                android:textColor="@color/md_black_1000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No\nAgreement"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="21dp"
+                android:textSize="12sp"
+                android:textColor="@color/md_black_1000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Telp"/>
+
+
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="35dp"
+                android:textSize="12sp"
+                android:layout_alignParentRight="true"
+                android:layout_toLeftOf="@+id/angsuran"
+                android:textColor="@color/md_black_1000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Days\n OD"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:textColor="@color/md_black_1000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Angsuran"/>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_below="@+id/ket2"
+            android:id="@+id/separator2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/drop_shadow"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/ket2"
+            android:padding="2dp"
+            android:background="@color/md_white_1000"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:layout_marginLeft="2dp"
+                android:id="@+id/nm_cust"
+                android:textSize="11sp"
+                android:textAlignment="center"
+                android:textColor="@color/md_black_1000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DEDI\nAHMAD\n YOGA"/>
+
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/noaggreement"
+                android:textSize="11sp"
+                android:textColor="@color/md_black_1000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2015101011"/>
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/notelp"
+                android:textSize="11sp"
+                android:textColor="@color/md_black_1000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123456789012"/>
+
+
+            <TextView
+                android:layout_marginLeft="12dp"
+                android:id="@+id/daysOD"
+                android:textSize="12sp"
+                android:layout_alignParentRight="true"
+                android:layout_toLeftOf="@+id/angsuran"
+                android:textColor="@color/md_black_1000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"/>
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:id="@+id/angsuran"
+                android:textSize="12sp"
+                android:textColor="@color/md_black_1000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00.000.000"/>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_below="@+id/ket2"
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/drop_shadow"/>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

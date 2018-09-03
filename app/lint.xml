@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="DefaultLocale" severity="ignore" />
+    <issue id="InvalidPackage" severity="warning" />
+    <issue id="MissingTranslation" severity="ignore" />
+    <issue id="ProtectedPermissions" severity="warning" />
+    <issue id="SimpleDateFormat" severity="ignore" />
+    <issue id="UseValueOf" severity="ignore">
+        <ignore path="src/index/finance/faith/ListCollectionActivity.java" />
+    </issue>
+    <issue id="Wakelock" severity="ignore" />
+</lint>

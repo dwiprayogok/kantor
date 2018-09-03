@@ -1,0 +1,11 @@
+#Internal package file, do not edit.
+#Mon Sep 03 14:19:01 ICT 2018
+1.base=D\:\\APPS DARI PC BARU\\MOBILE_SURVEY Part2\\kantor\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+0.baseType=DIRECTORY
+1.baseType=DIRECTORY
+count=2
+1.set=DEX
+0.path=classes2.dex
+0.set=DEX
+0.base=D\:\\APPS DARI PC BARU\\MOBILE_SURVEY Part2\\kantor\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+1.path=classes.dex

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        package="mandiri.finance.faith"
+    android:versionCode="21"
+    android:versionName="2.7.4">
+    <!--android:versionCode="18"-->
+    <!--android:versionCode="19"-->
+    <!--android:versionName="2.7.2">-->
+    <!--android:versionCode="20"-->
+    <!--android:versionName="2.7.3">-->
+
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="23" />
+    <!--<uses-sdk android:minSdkVersion="16" android:targetSdkVersion="2" />-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+ 	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.CAMERA" />	
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="index.finance.faith.permission.C2D_MESSAGE" />
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+	<uses-permission android:name="android.permission.READ_LOGS" />
+	
+	<permission
+        android:name="mandiri.finance.faith.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+ 
+    <uses-permission android:name="index.finance.faith.permission.MAPS_RECEIVE"
+        android:maxSdkVersion="23"/>
+ 
+	<uses-feature android:name="android.hardware.camera"
+        android:required="true"/>
+	<uses-feature android:name="android.hardware.camera.autofocus"
+        android:required="false"/>
+	
+	<uses-feature android:glEsVersion="0x00020000" android:required="true" />
+	
+	<permission android:name="mandiri.finance.faith.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+		
+	<application
+        android:icon="@mipmap/logomtf"
+        android:label="@string/app_name"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:allowBackup="true"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+        tools:replace="android:icon"
+        android:name=".MyApplication">
+        <!--android:name="MyApplication"-->
+
+        <meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" />
+
+        <activity
+            android:name=".DummyActivity"
+            android:noHistory="false"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- Goolge API Key -->
+     <meta-data
+         android:name="com.google.android.maps.v2.API_KEY"
+         android:value="AIzaSyAQ_AVPY1G2bK1WkQ1290jRJjCgOfl7nU8"/>
+        <!--AIzaSyAshqksWBWBhociJ1Ssm5I7F-dAXoqlDrk-->
+        <!--yg diatas api map buat debugging-->
+        <!--AIzaSyCNc7VkKdYN_NZECG7MGz66CqBalAjD-qo-->
+         <!--android:value="AIzaSyBDjVNO403F9zcbctzLGqXEJWSRkL6iPac" />-->
+        <!--AIzaSyBDjVNO403F9zcbctzLGqXEJWSRkL6iPac-->
+        <!--android:value="AIzaSyCl8iB7S275f6DXfrJNoII4HaT-T3h4mig-->
+        <!--android:value="AIzaSyAqso4ckYMJgG2iZW6bXFObjDrE0fut0iI"-->
+
+        <!--android:value="AIzaSyAQ_AVPY1G2bK1WkQ1290jRJjCgOfl7nU8"-->
+        <!--yg diatas dari console gmail mandiri dari pc lama-->
+
+     <meta-data android:name="com.google.android.gms.version"
+         android:value="@integer/google_play_services_version" />
+        <!--android:value="7095000"-->
+        
+        <activity
+            android:name=".WelcomeActivity" 
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:configChanges="keyboardHidden|orientation|screenSize" >            
+        </activity>
+        
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"  >            
+        </activity>
+        
+        <!--<activity-->
+
+            <!--android:name=".DashBoardActivity"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:configChanges="keyboardHidden|orientation|screenSize" >-->
+
+
+        <!--</activity>-->
+
+       <!--<activity android:name=".DashBoardActivity">-->
+
+       <!--</activity>-->
+
+
+        <!--<activity android:name=".DashBoardActivity2">-->
+
+        <!--</activity>-->
+
+        <!--<activity-->
+            <!--android:name=".DashBoardActivity2"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:configChanges="keyboardHidden|orientation|screenSize" >            -->
+        <!--</activity>-->
+        
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"  >    
+        </activity>
+
+
+
+
+
+        <activity
+            android:name=".ProspectActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        
+         <activity
+            android:name=".ListSurveyActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        
+        <activity
+            android:name=".SurveyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        
+        <activity
+            android:name=".ListSurveyLocationActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        
+        <activity
+            android:name=".SurveyLocationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        
+       	<activity
+            android:name=".ListCollectionActivity"
+            android:theme="@style/MyMaterialTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        
+        <activity
+            android:name=".CollectionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+
+
+
+
+        <activity
+            android:name=".Guide_Activity"
+            android:theme="@style/MyMaterialTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name=".AddData"
+            android:theme="@style/MyMaterialTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+
+        <activity
+            android:name=".News_Survey"
+            android:theme="@style/MyMaterialTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+
+
+        <activity
+            android:name=".TransStatusActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        
+        <!--<activity
+            android:name=".NotificationReceiver" 
+            android:configChanges="keyboardHidden|orientation|screenSize" >            
+        </activity>-->
+        
+        <service android:enabled="true" android:name=".DataService" />
+        <!--<service android:enabled="true" android:name=".LocationService" />-->
+        
+        <receiver android:name=".LocationReceiver" />
+		<receiver android:name=".LocationPoller" />
+		<service android:name=".LocationPollerService" />
+
+        <uses-library android:name="com.google.android.maps"
+            android:required="false"/>
+        
+        <!--<receiver-->
+            <!--android:name="com.google.android.gcm.GCMBroadcastReceiver"-->
+            <!--android:permission="com.google.android.c2dm.permission.SEND" >-->
+          <!--<intent-filter>-->
+            <!--<action android:name="com.google.android.c2dm.intent.RECEIVE" />-->
+            <!--<action android:name="com.google.android.c2dm.intent.REGISTRATION" />-->
+            <!--<category android:name="index.finance.faith" />-->
+          <!--</intent-filter>-->
+        <!--</receiver>-->
+        <!--<service android:name=".GCMIntentService" />-->
+        <!--android:name="com.google.android.gcm.GCMBroadcastReceiver"-->
+
+
+        <service android:name=".Interface.MyFirebaseMesagingService"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+
+        <service android:name=".Interface.MyFirebaseInstanceIDService">
+
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".Interface.MyNotificationExtenderService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.onesignal.NotificationExtender" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

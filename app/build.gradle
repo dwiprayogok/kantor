@@ -1,0 +1,176 @@
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/'}
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.11.0, 0.99.99]'
+    }
+}
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
+repositories {
+    maven { url 'https://maven.google.com' }
+}
+
+apply plugin: 'com.android.application'
+
+android {
+//    compileSdkVersion 24
+//    buildToolsVersion "25.0.2"
+//    compileSdkVersion 23
+//    buildToolsVersion '25.0.0'
+    signingConfigs {
+        config {
+            keyAlias 'MS_2018'
+            keyPassword 'a5u5a43e'
+            storeFile file('D:/APPS DARI PC BARU/MOBILE_SURVEY Part2/kantor/MS_062018.jks')
+            storePassword 'a5u5a43e'
+        }
+    }
+    compileSdkVersion 23
+    //buildToolsVersion '26.0.2'
+    buildToolsVersion '26.0.3'
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "mandiri.finance.faith"
+        manifestPlaceholders = [
+                onesignal_app_id: '1f08196c-3a1f-49ac-a474-375624288e5c',
+                // Project number pulled from dashboard, local value is ignored.
+                onesignal_google_project_number: 'REMOTE'
+        ]
+
+
+
+        minSdkVersion 16
+        targetSdkVersion 23
+        //targetSdkVersion 27
+        //versionCode 18
+        //versionCode 19
+        //versionCode 20
+        versionCode 21
+        versionName "2.7.4"
+        multiDexEnabled true
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles 'proguard.cfg'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            debuggable true
+            jniDebuggable true
+            renderscriptDebuggable true
+            pseudoLocalesEnabled true
+        }
+    }
+    lintOptions {
+        disable 'MissingTranslation'
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    productFlavors {
+    }
+}
+repositories {
+    jcenter()
+    maven {
+        url "https://jitpack.io"
+
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.android.support:cardview-v7:23.4.0'
+
+    //    compile 'com.android.support:appcompat-v7:27.1.1'
+
+    //    compile 'com.android.support:design:27.1.1'
+
+    //    compile 'com.android.support:recyclerview-v7:27.1.1'
+
+    //    compile 'com.android.support:cardview-v7:27.1.1'
+
+    //    compile 'com.android.support:appcompat-v7:24.0.0'
+
+    //    compile 'com.android.support:design:24.0.0'
+
+    //    compile 'com.android.support:recyclerview-v7:24.0.0'
+
+    //    compile 'com.android.support:cardview-v7:24.0.0'
+    compile 'com.toptoche.searchablespinner:searchablespinnerlibrary:1.3.1'
+    compile 'com.android.support:multidex:1.0.1'
+
+    //compile 'com.android.support:multidex:1.0.3'
+    compile 'cn.pedant.sweetalert:library:1.3'
+
+    //    compile 'com.google.android.gms:play-services-maps:10.2.1'//sbelumnya 10.2.0
+
+    //    compile 'com.google.android.gms:play-services-location:10.2.1'//sbelumnya 10.2.0
+
+    //
+
+    //    compile 'com.google.android.gms:play-services-maps:10.2.1'//sbelumnya 10.2.1
+
+    //    compile 'com.google.android.gms:play-services-location:10.2.1'//sbelumnya 10.2.1
+
+    //compile 'com.google.android.gms:play-services-maps:11.0.4'
+    compile 'com.google.android.gms:play-services-maps:15.0.1'
+
+    //sbelumnya 10.2.1
+
+    //compile 'com.google.android.gms:play-services-location:11.0.4'
+    compile 'com.google.android.gms:play-services-location:15.0.1'
+
+    //sbelumnya 10.2.1 tambahan dwi 11-9-2017
+
+    //
+
+    //    compile 'com.google.firebase:firebase-appindexing:10.2.0'//tambahan dwi 19-4-2017
+
+    //    compile 'com.google.firebase:firebase-core:10.2.0'
+
+    //    compile 'com.google.firebase:firebase-messaging:10.2.0'
+
+    //    compile 'com.google.firebase:firebase-appindexing:10.2.6'
+
+    //
+
+    //    //tambahan dwi 11-9-2017
+
+    //    compile 'com.google.firebase:firebase-core:10.2.6'
+
+    //    compile 'com.google.firebase:firebase-messaging:10.2.6'
+
+    //compile 'com.google.firebase:firebase-appindexing:15.0.1'
+    compile 'com.google.firebase:firebase-appindexing:16.0.1'
+    compile 'org.jsoup:jsoup:1.8.3'
+
+    //tambahan dwi 19-4-2017
+
+    //compile 'com.google.firebase:firebase-core:16.0.0'
+    compile 'com.google.firebase:firebase-core:16.0.1'
+
+    //compile 'com.google.firebase:firebase-messaging:17.0.0'
+    compile 'com.google.firebase:firebase-messaging:17.1.0'
+
+    //implementation 'com.onesignal:OneSignal:[3.10.0, 3.99.99]'
+
+    compile 'com.onesignal:OneSignal:[3.10.0, 3.99.99]'
+
+    //compile 'com.github.smart-fun:XmlToJson:1.4.0'    // add this line dwi 23-10-2017
+    compile files('libs/bugsense-3.6.jar')
+    compile files('libs/jdom.jar')
+    compile files('libs/jpos.jar')
+    compile files('libs/ksoap2-android-2.6.2.jar')
+    compile files('libs/java-json.jar')
+}
+apply plugin: 'com.google.gms.google-services'

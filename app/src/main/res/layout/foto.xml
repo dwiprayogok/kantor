@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/lay_photo"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_margin="5dp"
+            android:id="@+id/textImageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Foto KTP (asli)"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/label_color"
+            android:padding="3dip" />
+        <ImageView
+            android:id="@+id/fotoktp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:adjustViewBounds="true"
+            android:padding="20dp"
+            android:src="@drawable/gallery"
+            android:layout_below="@+id/textImageTitle" />
+
+        <TextView
+            android:layout_margin="5dp"
+            android:id="@+id/rumahdepan2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fotoktp"
+            android:text="3. Foto Rumah Depan"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/label_color"
+            android:padding="3dip" />
+
+        <ImageView
+            android:id="@+id/rumahdepan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:adjustViewBounds="true"
+            android:layout_alignLeft="@+id/fotoktp"
+            android:layout_below="@+id/rumahdepan2"
+            android:src="@drawable/gallery" />
+
+        <TextView
+            android:layout_margin="5dp"
+            android:id="@+id/dokumentlengkap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="2. Foto Dok. lengkap (asli)"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/label_color"
+            android:padding="3dip" />
+
+        <ImageView
+            android:id="@+id/doklengkap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_below="@+id/dokumentlengkap"
+            android:adjustViewBounds="true"
+            android:layout_toRightOf="@+id/fotoktp"
+            android:src="@drawable/gallery" />
+
+        <TextView
+            android:layout_margin="5dp"
+            android:id="@+id/textselfie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/doklengkap"
+            android:text="4. Foto Selfi dan Akses ijin"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/label_color"
+            android:padding="3dip" />
+
+        <ImageView
+            android:id="@+id/selfie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_below="@+id/textselfie"
+            android:adjustViewBounds="true"
+            android:layout_toRightOf="@+id/fotoktp"
+            android:src="@drawable/gallery" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

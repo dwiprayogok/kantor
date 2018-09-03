@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_below="@+id/lay_tool"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_white_1000">
+
+        <ProgressBar
+
+            android:layout_centerInParent="true"
+            android:id="@+id/progressbar2"
+            android:indeterminate="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/lay_refresh2"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="@color/md_black_1000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Refresh Data"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:tint="@color/md_white_1000"
+                android:src="@drawable/reload"
+                android:id="@+id/Refreshnews"/>
+
+        </LinearLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/Refreshnews22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list_news"
+                android:layout_margin="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <!--<ListView-->
+    <!--android:id="@+id/list_news"-->
+    <!--android:layout_margin="8dp"-->
+    <!--android:clickable="true"-->
+    <!--android:focusable="true"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--&gt;-->
+
+    <!--</ListView>-->
+
+
+    <RelativeLayout
+        android:id="@+id/lay_tool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <include layout="@layout/toolbar"
+            android:id="@+id/toolbar2"/>
+
+        <ImageView
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gmbarhome"
+            android:src="@drawable/home"/>
+
+        <ImageView
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gambarlogout"
+            android:src="@drawable/logout"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/News"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:textColor="@color/md_white_1000"/>
+
+    </RelativeLayout>
+</RelativeLayout>

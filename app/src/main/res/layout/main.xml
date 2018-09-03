@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    android:orientation="vertical"
+    android:layout_gravity="top">
+    <ViewStub android:id="@+id/vsHeader"
+        android:inflatedId="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/header" />
+<ScrollView
+    android:background="@color/md_white_1000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/md_white_1000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:paddingTop="20dip"
+        android:paddingBottom="10dip">
+
+        <Button
+            android:id="@+id/main_btn1"
+            style="@style/HomeButton"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/main_btn6"
+            android:drawableTop="@drawable/sales_off"
+            android:enabled="false"
+            android:onClick="onButtonClicker"
+            android:text="@string/ProspectActivityTitle" />
+
+        <Button
+            android:id="@+id/main_btn2"
+            style="@style/HomeButton"
+            android:layout_above="@+id/main_btn6"
+            android:layout_alignParentRight="true"
+            android:drawableTop="@drawable/survey_off"
+            android:enabled="false"
+            android:onClick="onButtonClicker"
+            android:text="@string/SurveyActivityTitle" />
+
+        <Button
+            android:id="@+id/main_btn6"
+            style="@style/HomeButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/main_btn4"
+            android:layout_below="@+id/main_btn1"
+            android:drawableTop="@drawable/location_off"
+            android:enabled="false"
+            android:onClick="onButtonClicker"
+            android:text="@string/SurveyActivityTitle2" />
+
+        <Button
+            android:id="@+id/main_btn3"
+            style="@style/HomeButton"
+            android:layout_alignLeft="@+id/main_btn2"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/main_btn2"
+            android:drawableTop="@drawable/collection_off"
+            android:enabled="false"
+            android:onClick="onButtonClicker"
+            android:text="@string/CollectionActivityTitle" />
+
+        <Button
+            android:id="@+id/main_btn4"
+            style="@style/HomeButton"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/main_btn6"
+            android:drawableTop="@drawable/report"
+            android:onClick="onButtonClicker"
+            android:text="@string/StatusTrans" />
+
+        <Button
+            android:id="@+id/main_btn5"
+            style="@style/HomeButton2"
+            android:layout_alignBaseline="@+id/main_btn4"
+            android:layout_alignBottom="@+id/main_btn4"
+            android:layout_alignParentRight="true"
+            android:drawableTop="@drawable/changepassword"
+            android:onClick="onButtonClicker"
+            android:text="@string/Password" />
+
+
+        <Button
+            android:visibility="visible"
+            android:id="@+id/main_btn9"
+            style="@style/HomeButton2"
+            android:layout_below="@+id/main_btn4"
+            android:drawableTop="@drawable/ic_refresh_2"
+            android:onClick="onButtonClicker"
+            android:text="@string/adddata" />
+
+        <Button
+            android:visibility="visible"
+            android:id="@+id/main_btn10"
+            style="@style/HomeButton2"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:layout_below="@+id/main_btn5"
+            android:drawableTop="@drawable/ic_news_32"
+            android:onClick="onButtonClicker"
+            android:text="@string/guide"
+            android:layout_alignLeft="@+id/main_btn3"
+            android:layout_alignStart="@+id/main_btn3" />
+
+        <Button
+            android:visibility="visible"
+            android:id="@+id/main_btn12"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentLeft="true"
+            style="@style/HomeButton3"
+            android:layout_below="@+id/main_btn9"
+            android:drawableTop="@drawable/ic_news_2"
+            android:onClick="onButtonClicker"
+            android:text="@string/News" />
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/versiapp"
+            android:text="Version 2.7"/>
+
+
+
+    </RelativeLayout>
+</ScrollView>
+    <!-- Included header.xml here -->
+
+
+
+
+</LinearLayout>

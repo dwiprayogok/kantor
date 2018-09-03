@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">742847266925-vfh5cef87q8gt7jatkssuogufoar7k6u.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://fir-coba1.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">742847266925</string>
+    <string name="google_api_key" translatable="false">AIzaSyADEHondqAXTPPB_8TkpgBeqCkvpn1nmy4</string>
+    <string name="google_app_id" translatable="false">1:742847266925:android:de8005d3708a8549</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyADEHondqAXTPPB_8TkpgBeqCkvpn1nmy4</string>
+    <string name="google_storage_bucket" translatable="false">fir-coba1.appspot.com</string>
+    <string name="project_id" translatable="false">fir-coba1</string>
+</resources>

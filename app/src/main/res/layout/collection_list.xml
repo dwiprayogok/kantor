@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_background"
+    android:orientation="vertical" 
+    android:layout_gravity="top">
+
+    <!-- Included header.xml here -->
+	<ViewStub android:id="@+id/vsHeader" 
+	    android:inflatedId="@+id/header" 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" 
+		android:layout="@layout/header" />
+	<TextView
+		android:id="@+id/textLastRefresh"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@color/label_color"
+		android:textSize="13sp"
+		android:padding="3dip"
+		 />
+
+	<LinearLayout
+		android:id="@+id/line_task"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+
+		<EditText
+			android:id="@+id/search_box"
+			android:singleLine="true"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:textSize="15sp"
+			android:layout_weight="50"
+			android:layout_toLeftOf="@+id/btnRefresh"
+			android:hint="@string/SearchCustomer" />
+
+		<Button
+			android:id="@+id/btnRefresh"
+			style="?android:attr/buttonStyleSmall"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/Sync"
+			android:textSize="15sp"
+			android:layout_alignParentRight="true" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/txt_tipe"
+			android:text="Sort By"/>
+
+		<Spinner
+			android:layout_toRightOf="@+id/txt_tipe"
+			android:id="@+id/typesort"
+			android:layout_width="0dp"
+			style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+			android:layout_weight="50"
+			android:layout_height="wrap_content"
+			android:entries="@array/Tipe"
+			/>
+
+	</LinearLayout>
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_below="@+id/content"
+		android:background="@color/md_grey_300"/>
+	<RelativeLayout
+		android:visibility="gone"
+		android:padding="5dp"
+		android:id="@+id/lay_radio"
+		android:layout_below="@+id/line_task"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<RadioGroup
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<RadioButton
+				android:layout_marginLeft="10dp"
+				android:onClick="onRadioButtonClicked"
+				android:id="@+id/alltask"
+				android:textSize="15sp"
+				android:text="All Task"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+
+			<RadioButton
+				android:layout_marginLeft="50dp"
+				android:onClick="onRadioButtonClicked"
+				android:id="@+id/planvisit"
+				android:textSize="15sp"
+				android:text="Plan Visit"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+		</RadioGroup>
+
+	</RelativeLayout>
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_below="@+id/content"
+		android:background="@color/md_grey_300"/>
+
+	<!---->
+	<!--<RelativeLayout-->
+	    <!--android:layout_width="match_parent"	    -->
+        <!--android:layout_height="wrap_content">-->
+        <!--<TextView-->
+		    <!--android:id="@+id/textLastRefresh"-->
+	 	    <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+			<!--android:textColor="@color/label_color"-->
+			<!--android:textSize="13sp"-->
+			<!--android:padding="3dip"-->
+			<!--android:layout_alignParentTop="true" />	    -->
+        <!--<Button -->
+            <!--android:id="@+id/btnRefresh"-->
+            <!--style="?android:attr/buttonStyleSmall"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" -->
+            <!--android:text="@string/Sync"-->
+            <!--android:layout_below="@+id/textLastRefresh"-->
+            <!--android:layout_alignParentRight="true" />-->
+        <!--<EditText-->
+            <!--android:id="@+id/search_box"-->
+            <!--android:singleLine="true"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_below="@+id/textLastRefresh"            -->
+            <!--android:layout_toLeftOf="@+id/btnRefresh" -->
+            <!--android:hint="@string/SearchCustomer" />-->
+        <!---->
+    <!--</RelativeLayout>-->
+	
+	<RelativeLayout
+		android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical">
+		<ListView 
+		    android:id="@+id/list"
+		    android:layout_weight="1" 
+		    android:cacheColorHint="@android:color/transparent"
+		    android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:choiceMode="singleChoice"
+	    	android:focusable="false"
+	    	android:drawSelectorOnTop="false"
+	    	android:divider="#b5b5b5"
+        	android:dividerHeight="1dp"
+        	android:listSelector="@drawable/list_selector"/>
+		<android.support.design.widget.FloatingActionButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:src="@drawable/reprintwhite"
+			android:layout_alignParentBottom="true"
+			android:layout_margin="45dp"
+			android:id="@+id/cekdata"/>
+	</RelativeLayout>
+	 
+</LinearLayout>

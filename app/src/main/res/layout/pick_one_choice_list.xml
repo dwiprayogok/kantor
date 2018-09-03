@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llPickOne"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:background="@color/all_background"
+    android:orientation="vertical"
+    tools:context=".PickOne" >
+
+
+    
+    <ListView
+        android:id="@+id/lvwPickOneChoice"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/transparent"
+        android:choiceMode="singleChoice"
+        android:drawSelectorOnTop="false"
+        android:focusable="false"
+        android:listSelector="@android:color/transparent" />
+    
+    <EditText
+        android:id="@+id/searchChoice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Search"
+        android:singleLine="true" />
+
+    <ListView
+        android:id="@+id/lvPickOneChoice"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/transparent"
+        android:choiceMode="singleChoice"
+        android:drawSelectorOnTop="false"
+        android:focusable="false"
+        android:listSelector="@android:color/transparent" />
+
+</LinearLayout>

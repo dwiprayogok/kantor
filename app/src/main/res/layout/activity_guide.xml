@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/lay_tool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <include layout="@layout/toolbar"
+            android:id="@+id/toolbar2"/>
+
+        <ImageView
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gmbarhome"
+            android:src="@drawable/home"/>
+
+        <ImageView
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gambarlogout"
+            android:src="@drawable/logout"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guide"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:textColor="@color/md_white_1000"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:padding="5dp"
+        android:layout_below="@+id/lay_tool"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            //Opening
+            <android.support.v7.widget.CardView
+                android:id="@+id/pertanyaan23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:textColor="@color/md_black_1000"
+                        android:textStyle="bold"
+                        android:id="@+id/ask1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OPENING"/>
+
+                    <RelativeLayout
+                        android:layout_below="@+id/ask1"
+                        android:visibility="visible"
+                        android:layout_marginTop="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:text="@string/txt_guide"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/text_guide_opening"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            //pertanyaan
+            <android.support.v7.widget.CardView
+                android:id="@+id/pertanyaan"
+                android:layout_below="@+id/pertanyaan23"
+                android:visibility="visible"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/lay_ask"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/up"
+                        android:visibility="gone"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_up"/>
+                    <ImageView
+                        android:id="@+id/down"
+                        android:visibility="visible"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_down"/>
+                    <TextView
+                        android:textColor="@color/md_black_1000"
+                        android:textStyle="bold"
+                        android:id="@+id/ask"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PERTANYAAN"/>
+
+                    <RelativeLayout
+                        android:id="@+id/pertanyaan2"
+                        android:visibility="gone"
+                        android:layout_below="@+id/ask"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:text="@string/txt_guide2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/text_guide_pertanyaan"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+            //Closing
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/pertanyaan"
+                android:id="@+id/pertanyaan22"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:textColor="@color/md_black_1000"
+                        android:textStyle="bold"
+                        android:id="@+id/ask3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CLOSING"/>
+
+                    <RelativeLayout
+                        android:id="@+id/pertanyaan21"
+                        android:visibility="visible"
+                        android:layout_marginTop="2dp"
+                        android:layout_below="@+id/ask3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:visibility="visible"
+                            android:text="@string/txt_guide3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/text_guide_closing"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

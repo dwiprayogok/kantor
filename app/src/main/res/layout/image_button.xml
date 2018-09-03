@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:padding="5dip"
+    android:orientation="vertical">
+        
+    <TextView
+	    android:id="@+id/textImageTitle"
+ 	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:text="@string/Image"
+		android:layout_alignParentLeft="true"
+		android:textColor="@color/label_color"
+		android:padding="3dip" />
+
+    <ImageView
+  	    android:id="@+id/button1"
+  	    android:layout_width="120dip"
+  	    android:layout_height="120dip"
+  	    android:layout_alignLeft="@+id/textImageTitle"
+  	    android:layout_below="@+id/textImageTitle"
+  	    android:layout_marginLeft="25dp"
+  	    android:onClick="onButtonClick"
+  	    android:src="@drawable/gallery" />
+
+  	<ImageView
+  	    android:id="@+id/button2"
+  	    android:layout_width="120dip"
+  	    android:layout_height="120dip"
+  	    android:layout_above="@+id/button3"
+  	    android:layout_alignParentRight="true"
+  	    android:layout_marginRight="25dp"
+  	    android:onClick="onButtonClick"
+  	    android:src="@drawable/gallery" />
+    
+  	<ImageView
+  	    android:id="@+id/button3"
+  	    android:layout_width="120dip"
+  	    android:layout_height="120dip"
+  	    android:layout_alignLeft="@+id/button1"
+  	    android:layout_below="@+id/button1"
+  	    android:onClick="onButtonClick"
+  	    android:src="@drawable/gallery" />
+  	
+  	<ImageView
+  	    android:id="@+id/button4"
+  	    android:layout_width="120dip"
+  	    android:layout_height="120dip"
+  	    android:layout_alignLeft="@+id/button2"
+  	    android:layout_below="@+id/button2"
+  	    android:onClick="onButtonClick"
+  	    android:src="@drawable/gallery" />
+
+</RelativeLayout>

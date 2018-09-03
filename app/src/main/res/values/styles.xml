@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="heading_text">
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:textSize">@dimen/text_size_medium</item>	
+	</style>
+	
+     <style name="HomeButton">
+	    <item name="android:paddingBottom">20dip</item>
+	    <item name="android:paddingLeft">50dip</item>
+	    <item name="android:paddingRight">50dip</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/label_color</item>
+        <item name="android:background">@null</item>
+    </style>
+    
+     <style name="HomeButton2">
+	    <item name="android:paddingBottom">20dip</item>
+	    <item name="android:paddingLeft">50dip</item>
+	    <item name="android:paddingRight">40dip</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/foreground1</item>
+        <item name="android:background">@null</item>
+    </style>
+
+
+
+    <style name="HomeButton3">
+        <item name="android:paddingBottom">5dip</item>
+        <item name="android:paddingLeft">30dip</item>
+        <item name="android:paddingRight">30dip</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/foreground1</item>
+        <item name="android:background">@null</item>
+    </style>
+
+
+    <style name="NoBackgroundTheme" parent="@android:Theme">
+		<item name="android:windowBackground">@null</item>
+		<item name="android:windowNoTitle">true</item>
+	</style>
+	
+	<style name="lightbox_dialog" parent="@android:style/Theme.Holo.NoActionBar">
+		<item name="android:windowAnimationStyle">@style/dialog_animation</item>
+		<item name="android:background">@color/translucent_black</item>
+	</style>
+	
+	<style name="dialog_animation">
+		<item name="android:windowEnterAnimation">@android:anim/fade_in</item> 
+		<item name="android:windowExitAnimation">@android:anim/fade_out</item> 
+	</style>
+
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+
+    </style>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/title_background</item>
+        <item name="colorPrimaryDark">@color/title_background</item>
+        <item name="colorAccent">@color/title_background</item>
+    </style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/title_background</item>
+        <item name="colorPrimaryDark">@color/title_background</item>
+        <item name="colorAccent">@color/title_background</item>
+    </style>
+		     
+</resources>

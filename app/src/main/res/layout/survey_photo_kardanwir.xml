@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textImageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Image"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/label_color"
+        android:padding="3dip" />
+
+    <RelativeLayout
+        android:padding="3dp"
+        android:layout_below="@+id/textImageTitle"
+        android:id="@+id/lay_line1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/ft_ktp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Foto KTP"
+            android:textColor="@color/label_color"
+            />
+
+
+        <ImageButton
+            android:background="@color/all_background"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_below="@+id/ft_ktp"
+            android:id="@+id/button1_survey"
+            android:layout_width="120dip"
+            android:layout_height="120dip"
+            android:onClick="onButtonClick3"
+            android:src="@drawable/gallery" />
+
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/ft_dok"
+            android:layout_alignLeft="@+id/button2_survey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Foto Selfie"
+            android:textColor="@color/label_color"
+            />
+
+        <ImageButton
+            android:background="@color/all_background"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_below="@+id/ft_dok"
+            android:layout_alignParentRight="true"
+            android:id="@+id/button2_survey"
+            android:layout_width="120dip"
+            android:layout_height="120dip"
+            android:onClick="onButtonClick3"
+            android:src="@drawable/gallery" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:padding="3dp"
+        android:layout_below="@+id/lay_line1"
+        android:id="@+id/lay_line2"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/ft_rmah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Foto Rumah"
+            android:textColor="@color/label_color"
+            />
+
+        <ImageButton
+            android:background="@color/all_background"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_below="@+id/ft_rmah"
+            android:id="@+id/button3_survey"
+            android:layout_width="120dip"
+            android:layout_height="120dip"
+            android:onClick="onButtonClick3"
+            android:src="@drawable/gallery" />
+
+
+        <TextView
+            android:layout_alignLeft="@+id/button4_survey"
+            android:layout_alignParentRight="true"
+            android:id="@+id/ft_selfi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Foto Akses Jalan"
+            android:textColor="@color/label_color"
+            />
+
+        <ImageButton
+            android:background="@color/all_background"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_below="@+id/ft_selfi"
+            android:layout_alignParentRight="true"
+            android:id="@+id/button4_survey"
+            android:layout_width="120dip"
+            android:layout_height="120dip"
+            android:onClick="onButtonClick3"
+            android:src="@drawable/gallery" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

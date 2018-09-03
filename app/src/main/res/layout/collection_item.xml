@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:background="@drawable/item_selector"
+  android:padding="5dip">  
+  
+  	<TextView
+		android:id="@+id/textHeader"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:singleLine="true"
+		android:textStyle="bold"
+		android:textColor="@color/label_color"
+		android:textSize="15sp"
+		android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dip"/>
+
+
+  	<TextView
+		android:id="@+id/textcontractNo"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:singleLine="true"
+		android:textColor="@color/label_color"
+		android:textSize="14sp"
+		android:layout_below="@id/textHeader"
+        android:layout_marginTop="1dip"
+        android:layout_marginRight="10dip"/>
+	<TextView
+		android:id="@+id/textDetail"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:maxLines="2"
+		android:textColor="@color/label_color"
+		android:textSize="14sp"
+		android:layout_below="@id/textcontractNo"
+        android:layout_marginTop="1dip"
+        android:layout_marginRight="10dip"/>
+	<TextView
+	    android:id="@+id/textDate"
+ 	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"		
+		android:textColor="@color/label_color"
+		android:textSize="13sp"
+		android:layout_below="@+id/textDetail"
+        android:layout_marginTop="1dip"
+        android:layout_marginRight="15dip"/>
+	<TextView
+	    android:id="@+id/textTaskDate"
+ 	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/textDate"
+		android:visibility="gone"/>
+	<TextView
+	    android:id="@+id/textInsNo"
+ 	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/textTaskDate"
+		android:visibility="gone"/>
+	<TextView
+	    android:id="@+id/textDueDate"
+ 	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/textInsNo"
+		android:visibility="gone"/>
+	<TextView
+	    android:id="@+id/textInsAmount"
+ 	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/textDueDate"
+		android:textColor="@color/label_color"
+		android:textSize="13sp"/>
+
+	<TextView
+		android:visibility="invisible"
+		android:id="@+id/textAmount"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/textDueDate"
+		android:textColor="@color/label_color"
+		android:textSize="13sp"/>
+
+	<TextView
+		android:id="@+id/textOverdue"
+		android:layout_below="@+id/textInsAmount"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@color/label_color"
+		android:textSize="13sp"/>
+
+	<ImageView
+ 	    android:id="@+id/imageArrow"
+ 	    android:layout_height="wrap_content"
+      	android:layout_width="wrap_content"
+      	android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/list_arrow"/>
+
+	<TextView
+		android:text="12313"
+		android:visibility="gone"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/textLat"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textStyle="bold"
+		android:textColor="@color/label_color"
+		android:textSize="15sp"
+		android:layout_marginRight="10dip"/>
+
+
+	<TextView
+		android:id="@+id/textLon"
+		android:visibility="gone"
+		android:text="12313"
+		android:layout_toRightOf="@+id/textLat"
+		android:layout_centerHorizontal="true"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textStyle="bold"
+		android:textColor="@color/label_color"
+		android:textSize="15sp" />
+
+
+
+</RelativeLayout>

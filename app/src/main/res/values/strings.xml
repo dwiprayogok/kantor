@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="splash_screen"></string>
+    <!--<string name="app_name">MTF Mobile</string>-->
+    <string name="app_name">MTF SPRINT</string>
+    <!-- Activity Titles -->
+    <string name="LoginActivityTitle">Mobile Application</string>
+    <string name="HomeActivityTitle">MTF Mobile</string>
+    <string name="Login">Login</string>
+    <string name="Submit">Submit</string>
+    <string name="ProspectActivityTitle">Prospect</string>
+    <string name="SurveyActivityTitle">Survey</string>
+    <string name="SurveyActivityTitle2">Survey Lingkungan</string>
+    <string name="CollectionActivityTitle">Coll Task</string>
+    <string name="StatusTrans">Transactions</string>
+    <string name="Password">Password</string>
+    <string name="update_message">Your Application Update is Available</string>
+    <string name="update_now">UPDATE NOW</string>
+    <string name="cancel">CANCEL</string>
+    <string name="Report">Report</string>
+    <string name="News">News</string>
+
+    <string name="guide">Guidance</string>
+    <string name="adddata">Refresh Data</string>
+    <string name="txt_guide">
+        Selamat pagi /siang/sore/malam/ Bapak/Ibu/Saudara. Perkenalkan,
+        nama saya Dwi Prayogo Kurniadi.
+        Saya Sales Officer PT. Mandiri Tunas Finance sedang menjalankan tugas untuk melakukan Survey.
+
+
+    </string>
+
+    <string name="txt_guide2">
+        1.	Nama Lengkap Bapak /ibu/Saudara adalah…. (tanyakan kepanjangan dari … Jika ada nama pemohon mengandung singkatan)  \n
+        2.	Bapak/Ibu/ Saudara memiliki nama panggilan atau nama akrab di lingkungan sekitar?
+    </string>
+
+
+    <string name="txt_guide3">
+        Terimakasih Bapak/Ibu/Saudara telah bersedia
+        menjawab pertanyaan-pertanyaan yang saya ajukan Dan jawaban Bapak/Ibu/Saudara sudah saya input kedalam
+        system danakansegera kami proses, Mohon
+        kesediaanya apabila sewaktu-waktu salah satu tim kami dari MTF menghubungi Bapak/Ibu/Saudara untuk melakukan Konfirmasi.
+
+
+
+    </string>
+
+
+    <string name="EPD">MY EPD</string>
+    <string name="ChangePassword">Change Password</string>
+    <string name="NewPassword">New Password</string>
+    <string name="ConfirmPassword">Confirm Password</string>
+    <string name="BranchSelect">Branch</string>
+    <!--<string name="url">http://mobileapp.mtf.co.id:48100/MobileApplication/AndroidFin.asmx</string>-->
+    <!--<string name="url">http://riau:48100/MobileApplication/AndroidFin.asmx</string>-->
+    <string name="url">http://123.231.241.53:48100/mobileapplication/AndroidFin.asmx</string>
+    <!--<string name="url">https://mobileapp.mtf.co.id:48019/mobileapplication/AndroidFin.asmx</string>-->
+    <string name="Sync">Sync</string>
+    <string name="SearchCustomer">Search Customer</string>
+    <string name="Search">Search..</string>
+    <string name="Image">Foto</string>
+    <string name="Next">Next</string>
+    <string name="Key44">m4Nd1RitUn@$F1n4nC3</string>
+    <string name="ViewReport">View Report</string>
+    <string name="SenderId">511968470428</string>
+
+    <string name="information">
+        Tombol Navigasi akan Muncul dan Aktif Setelah Marker berubah menjadi Merah.
+    </string>
+    <string name="information2">
+        TAKE PICTURE FIRST PLEASE !!!
+    </string>
+    <string name="information3">
+        Please pick min 1 picture for used car !!
+    </string>
+    <string name="berita">
+        Setiap manusia pada hakekatnya adalah pemimpin dan akan dimintai pertanggung jawaban
+        atas kepemimpinannya, manusia sebagai pemimpin minimal mampu memimpin dirinya
+        sendiri dan mempunyai kelebihan dibandingkan yang lainnya.
+    </string>
+    <string-array name="CustomerType">
+        <item>Karyawan</item>
+        <item>Wiraswasta / Profesional</item>
+        <item>Badan Usaha</item>
+    </string-array>
+
+    <string-array name="Tipe">
+        <item>ALL</item>
+        <item>DUE DATE</item>
+        <item>AMOUNT</item>
+        <item>OVERDUE</item>
+    </string-array>
+
+    <string-array name="colleges">
+
+        //Arts and Science Colleges
+
+        <item>Mahatma Gandhi Government College,Andaman and Nicobar Islands</item>
+        <item>Tagore Government College of Education,Andaman and Nicobar Islands</item>
+        <item>Dr B R Ambedkar Institute of Technology Port Blair,Andaman and Nicobar Islands</item>
+        <item>Government Arts College, Rajahmundry,Andhra Pradesh</item>
+        <item>Government Medical College, Anantapur,Andhra Pradesh</item>
+        <item>Maharajah\'s Government College of Music and Dance,Andhra Pradesh</item>
+        <item>P. V. K. N. Government College,Andhra Pradesh</item>
+        <item>Silver Jubilee Government Degree College,Andhra Pradesh</item>
+
+
+    </string-array>
+ </resources>

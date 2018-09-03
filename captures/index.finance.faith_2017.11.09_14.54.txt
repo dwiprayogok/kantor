@@ -1,0 +1,115 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        2b55fb0 index.finance.faith/.DummyActivity
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.android.vending.INSTALL_REFERRER:
+        c818e29 index.finance.faith/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+      com.google.android.c2dm.intent.RECEIVE:
+        93035ae index.finance.faith/com.google.firebase.iid.FirebaseInstanceIdReceiver
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.INSTANCE_ID_EVENT:
+        c760f4f index.finance.faith/.Interface.MyFirebaseInstanceIDService
+        d08c6dc index.finance.faith/com.google.firebase.iid.FirebaseInstanceIdService
+      com.google.firebase.MESSAGING_EVENT:
+        34dfeba index.finance.faith/com.google.firebase.messaging.FirebaseMessagingService
+        37be3e5 index.finance.faith/.Interface.MyFirebaseMesagingService
+
+Permissions:
+  Permission [index.finance.faith.permission.MAPS_RECEIVE] (7c0ae2c):
+    sourcePackage=index.finance.faith
+    uid=10131 gids=null type=0 prot=signature
+    perm=Permission{9ae516b index.finance.faith.permission.MAPS_RECEIVE}
+    packageSetting=PackageSetting{a81fe8a index.finance.faith/10131}
+  Permission [index.finance.faith.permission.C2D_MESSAGE] (da39cfb):
+    sourcePackage=index.finance.faith
+    uid=10131 gids=null type=0 prot=signature
+    perm=Permission{fc974c8 index.finance.faith.permission.C2D_MESSAGE}
+    packageSetting=PackageSetting{a81fe8a index.finance.faith/10131}
+
+Registered ContentProviders:
+  index.finance.faith/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{50bd961 index.finance.faith/com.google.firebase.provider.FirebaseInitProvider}
+  index.finance.faith/com.android.tools.fd.runtime.InstantRunContentProvider:
+    Provider{44d4c86 index.finance.faith/com.android.tools.fd.runtime.InstantRunContentProvider}
+
+ContentProvider Authorities:
+  [index.finance.faith.firebaseinitprovider]:
+    Provider{50bd961 index.finance.faith/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{7de9947 index.finance.faith}
+  [index.finance.faith.com.android.tools.fd.runtime.InstantRunContentProvider]:
+    Provider{44d4c86 index.finance.faith/com.android.tools.fd.runtime.InstantRunContentProvider}
+      applicationInfo=ApplicationInfo{7de9947 index.finance.faith}
+
+Key Set Manager:
+  [index.finance.faith]
+      Signing KeySets: 408
+
+Packages:
+  Package [index.finance.faith] (a81fe8a):
+    userId=10131
+    pkg=Package{651574 index.finance.faith}
+    codePath=/data/app/index.finance.faith-2
+    dexoptNeeded=false
+    resourcePath=/data/app/index.finance.faith-2
+    legacyNativeLibraryDir=/data/app/index.finance.faith-2/lib
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    versionCode=18 targetSdk=23
+    versionName=2.7
+    splits=[base, lib_dependencies_apk, lib_slice_0_apk, lib_slice_1_apk, lib_slice_2_apk, lib_slice_3_apk, lib_slice_4_apk, lib_slice_5_apk, lib_slice_6_apk, lib_slice_7_apk, lib_slice_8_apk, lib_slice_9_apk]
+    applicationInfo=ApplicationInfo{7de9947 index.finance.faith}
+    flags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    dataDir=/data/user/0/index.finance.faith
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      com.google.android.maps
+    usesLibraryFiles:
+      /system/framework/com.google.android.maps.jar
+    timeStamp=2017-11-09 14:45:35
+    firstInstallTime=2017-11-09 14:40:02
+    lastUpdateTime=2017-11-09 14:45:36
+    signatures=PackageSignatures{95019ad [34baa9d]}
+    installPermissionsFixed=true installStatus=1
+    pkgFlags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    declared permissions:
+      index.finance.faith.permission.MAPS_RECEIVE: prot=signature, INSTALLED
+      index.finance.faith.permission.C2D_MESSAGE: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.INTERNET
+      android.permission.READ_PHONE_STATE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      android.permission.CAMERA
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.WAKE_LOCK
+      index.finance.faith.permission.C2D_MESSAGE
+      android.permission.GET_ACCOUNTS
+      com.google.android.c2dm.permission.RECEIVE
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.READ_LOGS
+      index.finance.faith.permission.MAPS_RECEIVE
+    install permissions:
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      index.finance.faith.permission.MAPS_RECEIVE: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      index.finance.faith.permission.C2D_MESSAGE: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0:  installed=true hidden=false stopped=false notLaunched=false enabled=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.ACCESS_FINE_LOCATION: granted=true
+        android.permission.ACCESS_COARSE_LOCATION: granted=true
+        android.permission.READ_PHONE_STATE: granted=true

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llPickOne"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:background="@color/all_background"
+    android:orientation="vertical"
+     >
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/searchKecamatan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kecamatan"
+        android:singleLine="true" />
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/searchKelurahan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kelurahan"
+        android:singleLine="true"/>
+    <EditText
+        android:id="@+id/searchText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Search"
+        android:singleLine="true" />
+
+    <Button
+        android:visibility="gone"
+        android:text="@string/Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSearch"/>
+
+    <ListView
+        android:id="@+id/lvPickZipCode"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/transparent"
+        android:choiceMode="singleChoice"
+        android:drawSelectorOnTop="false"
+        android:focusable="false"
+        android:listSelector="@android:color/transparent" />
+
+</LinearLayout>

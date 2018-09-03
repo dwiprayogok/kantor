@@ -1,0 +1,143 @@
+{
+  "project_info": {
+    "project_number": "742847266925",
+    "firebase_url": "https://fir-coba1.firebaseio.com",
+    "project_id": "fir-coba1",
+    "storage_bucket": "fir-coba1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742847266925:android:799430cac1389b04",
+        "android_client_info": {
+          "package_name": "com.example.gue_pc.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742847266925-mk0r3gd0bff9b7tf1uc8nvmc5nr6a0ge.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gue_pc.myapplication",
+            "certificate_hash": "8fd5af581a92be6f6f748033a0a40baa82f25f70"
+          }
+        },
+        {
+          "client_id": "742847266925-vfh5cef87q8gt7jatkssuogufoar7k6u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADEHondqAXTPPB_8TkpgBeqCkvpn1nmy4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742847266925-vfh5cef87q8gt7jatkssuogufoar7k6u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742847266925:android:e618d98be2736096",
+        "android_client_info": {
+          "package_name": "index.finance.faith"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742847266925-mvtphne9ougtf9is8i8ogfeo1a326p73.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "index.finance.faith",
+            "certificate_hash": "8fd5af581a92be6f6f748033a0a40baa82f25f70"
+          }
+        },
+        {
+          "client_id": "742847266925-vfh5cef87q8gt7jatkssuogufoar7k6u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADEHondqAXTPPB_8TkpgBeqCkvpn1nmy4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742847266925-vfh5cef87q8gt7jatkssuogufoar7k6u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742847266925:android:de8005d3708a8549",
+        "android_client_info": {
+          "package_name": "mandiri.finance.faith"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742847266925-khqtvj6e791kabdaqppalp59h53to2v8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mandiri.finance.faith",
+            "certificate_hash": "ebfa7a039b6f7bf7f9ae6387fee4d8953bd41a64"
+          }
+        },
+        {
+          "client_id": "742847266925-vfh5cef87q8gt7jatkssuogufoar7k6u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADEHondqAXTPPB_8TkpgBeqCkvpn1nmy4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742847266925-vfh5cef87q8gt7jatkssuogufoar7k6u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
